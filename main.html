@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informational Assistance</title>
+    <link rel="stylesheet" href="./Styles/mainStyle.css">
+    <link rel="icon" href="./images/InfoAssistance-removebg-preview.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="./JavaScript/content.js"></script>
+    <script src="./JavaScript/darkmode.js"></script>
+    <script src="./JavaScript/unavaliable.js"></script>
+
+    <!-- J Query -->
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+            $('.toggle').click(function() {
+                $('nav').toggleClass('active')
+            })
+        })
+    </script>
+</head>
+<body>
+    <div class="navigation_bar">
+        <a href="#aboutus">
+            <section>
+                <img src="./images/InfoAssistance-removebg-preview.png" alt="UCSY_Logo">
+                <h1 >Informational<br>Assistance</h1>
+            </section>
+        </a>
+
+        <!-- <div class="sidebar">
+            <nav>
+                <ul>
+                    <li><a href="#"><i class="fa-solid fa-house icon"></i>Home</a></li>
+                    <li><a href="#"><i class="fa-solid fa-circle-info icon"></i>About us</a></li>
+                    <li><a href="#"><i class="fa-solid fa-folder icon"></i>Content<i class="fa-solid fa-angle-down icon dropdown"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-utensils icon"></i>Food & Drink</a></li>
+                    <li><a href="#"><i class="fa-solid fa-newspaper icon"></i>Activity</a></li>
+                </ul>
+            </nav>
+            <div class="toggle"><i class="fa-solid fa-bars"></i></div>
+        </div> -->
+        
+        
+        <nav class="sidebar">
+            <nav>
+                <ul>
+                    <li><a href="#home">Home<i class="fa-solid fa-house icon"></i></a></li>
+                    <li><a href="#aboutus">About us<i class="fa-solid fa-circle-info icon"></i></a></li>
+                    <li id="dropdown"><a href="#content">Content<i class="fa-solid fa-angle-down icon"></i></a>
+                    <ul class="dropdown">
+                        <li><a href="#software">Softwares<i class="fa-solid fa-grip icon"></i></a></li>
+                        <li><a href="./LectureSlides.html">Lecture Slides<i class="fa-solid fa-book icon"></i></a></li>
+                        <li><a href="./LectureVideo.html">Lecture Videos<i class="fa-solid fa-video icon"></i></a></li>
+                        <li style="border-bottom-left-radius: 10px;
+                        border-bottom-right-radius: 10px;"><a href="./timetable.html">Time Table<i class="fa-solid fa-calendar-days icon"></i></a></li>
+                    </ul> </li>
+                    <li id="extra_3"><a href="#software">Softwares<i class="fa-solid fa-grip icon"></i></a></li>
+                    <li id="extra_3"><a href="./LectureSlides.html">Lecture Slides<i class="fa-solid fa-book icon"></i></a></li>
+                    <li id="extra_3"><a href="./LectureVideo.html">Lecture Videos<i class="fa-solid fa-video icon"></i></a></li>
+                    <li id="extra_3"><a href="./timetable.html">Time Table<i class="fa-solid fa-calendar-days icon"></i></a></li>
+                    <li><a href="./FoodAndDrink.html">Food & Drink<i class="fa-solid fa-utensils icon"></i></a></li>
+                    <li id="hide"><a href="./activities.html" class="mobile_dark">Memories<i class="fa-solid fa-newspaper icon"></i></a></li> 
+
+                    <!-- <div class="mobile"> -->
+                        <a href="./index.html" class="mobile_logout extra_3"><h1 style="font-size: 18px; margin-right: 30px; margin: 30px 10px;">Log Out</h1></a>
+                    <!-- </div> -->
+                    <!-- </div> -->
+            </nav>
+            <div class="toggle"><i class="fa-solid fa-bars"></i></div>
+
+            </ul>
+        </nav>
+        <!-- <li><button onclick="myFunction()">mode</button></li> -->
+                <!-- <div id="drak-light"  onclick="myFunction()"  > -->
+                    <img id="dark-light" onclick="changeImage()" src="./images/turnOff.png" class="darkmode_btn desktop_dark">
+                    <a href="./index.html" class="desktop_logout"><h1 style="font-size: 18px; margin-right: 30px;">Log Out</h1></a>
+                   <!-- <div class="mode_div">
+                    <section style="display: flex; align-items: center;" class="mode_div">
+                        <h1>Light mode </h1>
+                        <button onclick="myFunction(), changeImage()" class="dark-mode-key" id="dark-light">
+                            <section id="dark-mode"></section>
+                        </button>
+                        <h1> Dark mode</h1>
+                    </section>
+                   </div> -->
+                   <script type="text/javascript">
+                    const toggleSidebar = () => document.body.classList.toggle("click");
+                </script>
+    </div>
+
+
+    <!-- Home Page -->
+    <section id="home">
+        <section class="white_space"></section>
+        <!-- <img src=""> -->
+        <div class="workspace">
+            <section class="detail">
+                <h1>We're ready<br>to help you.</h1>
+                <p class="p1">The mission of website is to provide a comprehensive online platform that empowers students(Sem3) with the resources they need to excel in their studies. We aim to create a centralized hub where students can access lecture materials, videos, and software tools,and supportive learning environment.</p>
+                <a href="./learnMore.html"><h2>Learn more</h2></a>
+
+            </section>
+            <section class="image">
+                <img src="./images/Active Support-amico.svg" alt="helping_svg">
+            </section>
+        </div>
+        <p class="p2">The mission of website is to provide a comprehensive online platform that empowers students(Sem3) with the resources they need to excel in their studies. We aim to create a centralized hub where students can access lecture materials, videos, and software tools,and supportive learning environment.</p>
+    </section>
+    <hr>
+    <!-- About Page -->
+    <section id="aboutus">
+        <section class="white_space"></section>
+        <div class="aboutus">
+            <section>
+                <img src="./images/About us page-rafiki.svg" alt="About Us image">
+            </section>
+            <section>
+                <div class="container">
+                    <h2>Welcome to Our Story<i class="fa-solid fa-hand-peace icon"></i></h2>
+                    <p>We are a passionate team dedicated to delivering high-quality services that enhance your life. With a collective experience, we are committed to pushing the boundaries of innovation and excellence.</p>
+                    <p>Our mission is to create the accessible informations of the Semester(3) UCSY, we strive to make a positive impact of the students.</p>
+                    <br><br>
+                    <h2>Meet Our Team<i class="fa-solid fa-people-group icon"></i></h2>
+                    <p>We are a diverse team of students,each bringing a unique skill set and perspective to the table. Our collaborative environment fosters creativity and innovation, ensuring we deliver the best solutions to you.</p>
+                    <br><br>
+                    <h2>Our Motivation<i class="fa-solid fa-layer-group"></i></h2>
+                    <p>Students are having a hard time choosing and searching for study materials. We as a team want to solve the problem that most student face every year.
+                        For Semester-III, we created informations Assistance website for  our year and upcoming year.We hope we can relay this website to outstanding junior who can maintain and develop this website for all year students, 
+                        along with UCSY main website.</p>
+                    <br><br>    
+
+                    <h2>Contact Us<i class="fa-solid fa-envelope icon"></i></h2>
+                    <p>If you're interested in learning more or have any questions, please feel free to reach out to us at <i><a href="mailto:yem3092003@gmail.com">infoassistance.ucsy@gmail.com</a></i></p>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <!-- Softwares Download -->
+    <section id="software">
+        <section style="height: 80px;"></section>
+        <div class="software_mainSection">
+            <div class="software_title">
+                <h1>We're</h1>
+                <h2>supporting to be easy.</h2>
+            </div>
+            <div class="software_main">
+                <section class="main_section">
+                    <div class="title">
+                        <p>ESSENTIALS</p>
+                        <h1>Code Editors</h1>
+                    </div>
+
+                    <div class="software">
+                        <section>
+                            <span>
+                                <img src="./images/eclipse.png" alt="eclipse icon">
+                                <span class="detail">
+                                    <h1>Eclipse IDE</h1>
+                                    <p>Java SE/EE Editor</p>
+                                </span>
+                            </span>
+                            <a href="https://www.eclipse.org/downloads/">
+                                <h1 class="download_key">Get</h1>
+                            </a>
+                        </section>
+                        <hr>
+                        <section>
+                            <span>
+                                <img src="./images/intellij idea icon.png" alt="intellij idea icon">
+                                <span class="detail">
+                                    <h1>Intellij Idea Community IDE</h1>
+                                    <p>Java SE Editor</p>
+                                </span>
+                            </span>
+                            <a href="https://www.jetbrains.com/idea/download/?section=windows">
+                                <h1 class="download_key">Get</h1>
+                            </a>
+                        </section>
+                        <hr>
+                        <section>
+                            <span>
+                                <img src="./images/pycharm.png" alt="pycharm community icon">
+                                <span class="detail">
+                                    <h1>Pycharm IDE</h1>
+                                    <p>Python Editor</p>
+                                </span>
+                            </span>
+                            <a href="https://www.jetbrains.com/pycharm/download/?section=windows">
+                                <h1 class="download_key">Get</h1>
+                            </a>
+                        </section>
+                        <hr>
+                        <section>
+                            <span>
+                                <img src="./images/visual studio code.png" alt="visual studio code icon">
+                                <span class="detail">
+                                    <h1>Visual Studio Code</h1>
+                                    <p>All in one Editor</p>
+                                </span>
+                            </span>
+                            <a href="https://code.visualstudio.com/">
+                                <h1 class="download_key">Get</h1>
+                            </a>
+                        </section>
+                        <hr>
+                        <section>
+                            <span>
+                                <img src="./images/Visual_Studio_Icon_2022.svg.png" alt="visual studio icon">
+                                <span class="detail">
+                                    <h1>Visual Studio</h1>
+                                    <p>All in one Editor</p>
+                                </span>
+                            </span>
+                            <a href="https://visualstudio.microsoft.com/downloads/">
+                                <h1 class="download_key">Get</h1>
+                            </a>
+                        </section>
+                        <hr>
+                        <section>
+                            <span>
+                                <img src="./images/sublimeText.png" alt="sublimeText icon">
+                                <span class="detail">
+                                    <h1>Sublime Text</h1>
+                                    <p>Python Editor</p>
+                                </span>
+                            </span>
+                            <a href="https://www.sublimetext.com/3">
+                                <h1 class="download_key">Get</h1>
+                            </a>
+                        </section>
+                        <hr>
+                        <section>
+                            <span>
+                                <img src="./images/Atom_1.0_icon.png" alt="Atom icon">
+                                <span class="detail">
+                                    <h1>Atom</h1>
+                                    <p>Java SE/EE Editor</p>
+                                </span>
+                            </span>
+                            <a href="https://github.com/atom/atom/releases/tag/v1.60.0">
+                                <h1 class="download_key">Get</h1>
+                            </a>
+                        </section>
+                        <hr>
+                        <section>
+                            <span>
+                                <img src="./images/notePad.png" alt="notePad icon">
+                                <span class="detail">
+                                    <h1>Notepad++</h1>
+                                    <p>source code editor</p>
+                                </span>
+                            </span>
+                            <a href="https://notepad-plus-plus.org/downloads/">
+                                <h1 class="download_key">Get</h1>
+                            </a>
+                        </section>
+                        <hr>
+                        <section>
+                            <span>
+                                <img src="./images/codeBlocks.png" alt="code block icon">
+                                <span class="detail">
+                                    <h1>Code Blocks</h1>
+                                    <p>C/C++ Editor</p>
+                                </span>
+                            </span>
+                            <a href="https://www.codeblocks.org/downloads/binaries/">
+                                <h1 class="download_key">Get</h1>
+                            </a>
+                        </section>
+                    </div>
+                </section>
+                <section class="main_section">
+                    <div class="title">
+                        <p>NECESSARIES</p>
+                        <h1>Meida Tools</h1>
+                    </div>
+
+                    <div class="software">
+                        <section>
+                            <span>
+                                <img src="./images/office365.png" alt="office356 icon">
+                                <span class="detail">
+                                    <h1>Office 365</h1>
+                                    <p>Microsoft office</p>
+                                </span>
+                            </span>
+                            <a href="https://www.mediafire.com/file/6r0z9fu2tf0cv2g/Microsoft.Office.2021.v.16.0.14332.20345.%2528x64%2529.%2528Repack%2529.part1.rar/file"
+                                download="">
+                                <h1 class="download_key">Get</h1>
+                            </a>
+                        </section>
+                        <hr>
+                        <section>
+                            <span>
+                                <img src="./images/Git.png" alt="git icon">
+                                <span class="detail">
+                                    <h1>Git</h1>
+                                    <p>Developer Tool</p>
+                                </span>
+                            </span>
+                            <a href="https://git-scm.com/downloads">
+                                <h1 class="download_key">Get</h1>
+                            </a>
+                        </section>
+                        <hr>
+                        <section>
+                            <span>
+                                <img src="./images/GitHub.png" alt="github icon">
+                                <span class="detail">
+                                    <h1>GitHub</h1>
+                                    <p>Developer Tool</p>
+                                </span>
+                            </span>
+                            <a href="https://desktop.github.com/">
+                                <h1 class="download_key">Get</h1>
+                            </a>
+                        </section>
+                        <hr>
+                        <section>
+                            <span>
+                                <img src="./images/Zoom.png" alt="zoom icon">
+                                <span class="detail">
+                                    <h1>Zoom</h1>
+                                    <p>Virtual Communications</p>
+                                </span>
+                            </span>
+                            <a href="https://zoom.us/download?os=win">
+                                <h1 class="download_key">Get</h1>
+                            </a>
+                        </section>
+                        <hr>
+                        <section>
+                            <span>
+                                <img src="./images/mysql.png" alt="mysql icon">
+                                <span class="detail">
+                                    <h1>MySQL</h1>
+                                    <p>open source RDBMS</p>
+                                </span>
+                            </span>
+                            <a href="https://dev.mysql.com/downloads/installer/">
+                                <h1 class="download_key">Get</h1>
+                            </a>
+                        </section>
+                    </div>
+                </section>
+            </div>
+    </section>
+    </div>
+
+    <!-- Three Contents -->
+    <div class="three_contents_container" id="content">
+        <section class="white_space"></section>
+        <section class="three_contents">
+            <a href="./LectureSlides.html" class="text">
+                <div>
+                    <img src="./images/slides.png" alt="Lecture slides" class="image">
+                    <h1>Lecture Slides</h1>
+                    <p>A concise presentation summarizing key points from each lecture
+                        for sem-3.
+                    </p>
+                </div>
+            </a>
+            
+            <a href="./LectureVideo.html" class="text">
+                <div>
+                    <img src="./images/online-course.png" alt="Lecture Videos" class="image">
+                    <h1>Lecture Videos</h1>
+                    <p>Engaging video recordings capturing educational lectures to enhance learning
+                        through visual and auditory experiences.
+                    </p>
+                </div>
+            </a>
+            
+            <a href="./timetable.html" class="text">
+                <div>
+                    <img src="./images/schedule.png" alt="Schedule" class="image">
+                    <h1>Time Table</h1>
+                    <p>A schedule outlining the dates,times,providing students with a structured plan for attending
+                        and preparing for their educational sessions.
+                    </p>
+                </div>
+            </a>
+        </section>
+    </div>
+    <section class="news">
+        <section>
+            <img src="" alt="">
+        </section>
+    </section>
+
+    <!-- <hr style="width: 100%;"> -->
+    
+    <div class="final">
+        <div class="copy_right">
+            <h1>Copy right @ <i>Informational Assistance Group</i> since 13<sup>th</sup> August, 2023</h1>
+            <section class="copy_right_image">
+                <a href="https://ucsy.edu.mm">
+                    <div>
+                        <img src="./images/ucsylogo.png" alt="" id="cp_ucsyLogo">
+                        <br>
+                        <h1 for="cp_ucsyLogo">University of Computer Studies, Yangon</h1>
+                    </div>
+                </a>
+                <a href="#aboutus">
+                    <div>
+                        <img src="./images/InfoAssistance-removebg-preview.png" alt="" id="cp_iaLogo">
+                        <br>
+                        <h1 for="cp_iaLogo">Informational Assistance Group</h1>
+                    </div>
+                </a>
+            </section>
+        </div>
+    
+         <!-- Built in Region and Language -->
+         <div class="conclusion">
+            <div class="general" style="display: flex; justify-content: space-between; align-items: center;">
+                <div class="accounts">
+                    <button onclick="unavaliable()">
+                        <a href="#">
+                            <img src="./images/facebook.png" alt="facebook" class="accounts_img">
+                        </a>
+                    </button>
+    
+                    <button onclick="unavaliable()">
+                        <a href="#">
+                            <img src="./images/instagram.png" alt="instagram" class="accounts_img">
+                        </a>
+                    </button>
+    
+                    <button onclick="unavaliable()">
+                        <a href="#">
+                            <img src="./images/telegram.png" alt="telegram" class="accounts_img">
+                        </a>
+                    </button>
+    
+                    <button>
+                        <a href="mailto:infoassistance.ucsy@gmail.com">
+                            <img src="./images/gmail-logo.png" alt="gmail" class="accounts_img">
+                        </a>
+                    </button>
+    
+                    <button onclick="unavaliable()">
+                        <a href="#">
+                            <img src="./images/twitter.png" alt="twitter" class="accounts_img">
+                        </a>
+                    </button>
+                </div>
+                <div class="region_lang">
+                    <div>
+                        <i class="fa-solid fa-earth-americas icon"></i>
+                        <span>
+                            <h1 style="display: inline-block;">Myanmar</h1>
+                            <p>Built in Country</p>
+                        </span>
+                    </div>
+    
+                    <div>
+                        <i class="fa-solid fa-language icon"></i>
+    
+                        <span>
+                            <h1 style="display: inline-block;">English</h1>
+                            <p>Built in Language</p>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <form action="https://sheetdb.io/api/v1/6fse17ipqx3pu" class="form feed_back" method="post"
+                    id="sheetdb1-form">
+                    <input type="text" placeholder="Feedback" name="data[Feed Back]" id="feed_back" autocomplete="off">
+                    <button class="feed_back_btn" type="submit">
+                        <h1>send</h1>
+                    </button>
+                </form>
+            </div>
+    
+        </div>
+    </div>
+    
+
+
+    <!-- Feed back -->
+
+    <script>
+
+        var form = document.getElementById('sheetdb1-form');
+        form.addEventListener("submit", e => {
+            e.preventDefault();
+            fetch(form.action, {
+                method: "POST",
+                body: new FormData(document.getElementById("sheetdb1-form")),
+            }).then(
+                response => response.json()
+            ).then((html) => {
+
+                alert("Thank you for your feedback.")
+                // window.location= "main.html"; // Redirecting to other page.
+                // alert("This is js main")
+                // return false;
+            });
+        });
+
+
+    </script>
+    
+</body>
+</html>

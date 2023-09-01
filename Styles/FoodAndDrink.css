@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Myanmar:wght@400;900&display=swap');
+
+* {
+    transition: 1s;
+}
+
+.food_drink .first_section img {
+    width: 800px;
+}
+
+.food_drink .second_section {
+    width: 500px;
+    margin: 50px;
+
+}
+
+.food_drink .second_section div a {
+    text-align: right;
+}
+
+.food_drink {
+    /* background-image: url("/images/Chef-cuate.svg"); */
+    background-color: transparent;
+    background-repeat: no-repeat;
+    /* border: 1px solid #000000; */
+    width: 1500px;
+    height: 800px;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    margin: 50px auto;
+    background-color: #4ac1d6a1;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px gray, -5px 0px 5px gray;
+}
+
+.heading {
+    width: 350px;
+    line-height: 5px;
+    margin: 80px auto;
+    display: block;
+}
+
+.heading #heading {
+    color: #3AA6B9;
+    font-size: 80px;
+
+}
+
+.heading i {
+    color: #3AA6B9;
+    text-align: right;
+}
+
+.heading span {
+    font-size: 50px;
+}
+
+.canteen {
+    display: block;
+    /* justify-content: space-around; */
+}
+
+.canteen h1 {
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Noto Serif Myanmar', serif;
+}
+
+.canteen a {
+    text-decoration: none;
+    text-align: center;
+    color: #000000;
+}
+
+.canteen h2 {
+    width: 100px;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #3AA6B9;
+    display: block;
+    margin: auto;
+}
+
+.canteen section {
+    display: flex;
+    justify-content: space-between;
+    line-height: 20px;
+    margin: 50px;
+}
+
+.canteen abbr {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 450px) {
+
+    .exit i {
+        font-size: 20px;
+    }
+    .food_drink .first_section img {
+        width: 300px;
+        display: none;
+    }
+    
+    .food_drink .second_section {
+        display: block;
+        width: 300px;
+        margin: auto;
+    }
+
+    .food_drink .second_section h1 {
+        text-align: center;
+    }
+
+    .food_drink .second_section p{ 
+        text-align: right;
+    }
+
+    .canteen {
+        display: block;
+        justify-content: space-around;
+        align-content: ver;
+    }
+    
+    .food_drink {
+        /* background-image: url("/images/Chef-cuate.svg"); */
+        background-color: transparent;
+        background-repeat: no-repeat;
+        /* border: 1px solid #000000; */
+        width: 350px;
+        height: 550px;
+        display: block;
+        /* flex-direction: column; */
+        margin: 50px auto;
+        background-color: #4dbdd1d7;
+        box-shadow: 5px 5px 5px gray, -5px 0px 5px gray;
+    }
+    
+    .heading {
+        width: 300px;
+        margin: 0px auto;
+        display: block;
+    }
+    
+    .heading #heading {
+        color: #3AA6B9;
+        font-size: 40px;
+    
+    }
+    
+    .heading i {
+        color: #3AA6B9;
+    }
+    
+    .heading span {
+        font-size: 30px;
+    }
+    
+    .canteen h1 {
+        text-align: center;
+        font-size: 20px;
+        font-family: 'Noto Serif Myanmar', serif;
+    }
+    
+    .canteen a {
+        text-decoration: none;
+        text-align: center;
+        color: #000000;
+    }
+    
+    .canteen h2 {
+        width: 80px;
+        padding: 10px;
+    }
+
+    .canteen section {
+        display: block;
+    }
+    
+}

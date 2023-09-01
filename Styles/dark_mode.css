@@ -1,0 +1,81 @@
+
+.dark-mode{
+    background-color: rgb(53, 54, 57);
+    color: white;
+    transition: 0.5s;
+    
+}
+
+
+.dark-mode .navigation_bar{
+    background-color: rgb(53, 54, 57);
+    /* color: white; */
+    transition: 0.5s;
+    width: 100%;
+}
+
+.dark-mode .navigation_bar h1 {
+}
+
+.dark-mode .navigation_bar ul li ul.dropdown li {
+    display: block;
+    background-color: #00000075;
+}
+
+#dark-light{
+    float: right;
+}
+
+.dark-mode .navigation_bar h1 {
+    color: #ffffff;
+}
+
+.dark-mode .navigation_bar ul li a{
+    color: rgb(255, 255, 255);
+}
+
+.dark-mode .navigation_bar ul li ul.dropdown li {
+    background-color: rgb(53, 54, 57);
+}
+
+.mode_div h1 {
+    font-size: 15px;
+    margin: 10px;
+}
+.navigation_bar ul li a:hover {
+    color: #F7E987;
+}
+
+.dark-mode-key {
+    width: 90px;
+    height: 40px;
+    border-radius: 30px;
+    background-color: transparent;
+}
+
+.dark-mode-key section {
+    /* border: 1px solid #000000; */
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background-color: gray;
+    margin-right: 10px;
+    /* transition: 2s; */
+}
+
+/* .dark-mode img {
+    width: 50px;
+} */
+
+.dark-mode {
+    float: right;
+    /* background-color: green; */
+}
+
+.dark-mode .three_contents .text {
+    color: #ffffff;
+}
+
+.dark-mode .copy_right_image a {
+    color: #ffffff;
+}

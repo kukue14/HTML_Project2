@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+@import url(./navigation.css);
+@import url(./menuDetail.css);
+@import url(./aboutus.css);
+@import url(./software.css);
+@import url(./activities.css);
+@import url(./threeContents.css);
+@import url(./dark_mode.css);
+
+
+.list-container{
+    font-family: 'Roboto Condensed', sans-serif;
+    scroll-behavior: smooth;
+    /* transition: 0.2s; */
+    display: block;
+    margin: 20px auto;
+    width: 95%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px grey, -5px 0px 5px grey;  
+}
+
+.list-container .sub_container {
+    padding: 20px 40px;
+    text-align: justify;
+}
+
+.list-container .sub_container ul li {
+    font-size: 20px;
+}
+
+.list-container .sub_container p {
+    font-size: 20px;
+}
+
+.developer_says {
+    display: none;
+}
+
+@media screen and (max-width: 450px) {
+    .list-container {
+        font-size: 10px;
+    }
+
+    .developer_says {
+        display: block;
+        margin: 30px 20px;
+    }
+    
+    .developer_says .main_says {
+        margin-bottom: 20px;
+    }
+    
+    .sub_developer_says {
+        display: block;
+    }
+    
+    .developer_says h1 {
+        margin-bottom: 30px;
+        font-size: 20px;
+    }
+    
+    .developer_says .sub_developer_says div {
+        width: 98%;
+        margin-right: 50px;
+    }
+
+    .developer_says .sub_developer_says br {
+        display: none;
+    }
+
+    .developer_says .sub_developer_says p {
+        margin-top: 0px;
+        margin-bottom: 50px;
+        font-size: 13px;
+    }
+    
+    .developer_says div .image {
+        width: 80px;
+        height: 80px;
+        border-radius: 100%;
+        border: 1px solid #000000;
+        margin-bottom: 10px;
+    }
+}
+
+

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.dark-mode-key {
+    width: 100px;
+    height: 50px;
+    border-radius: 30px;
+}
+
+.dark-mode-key section {
+    border: 1px solid #000000;
+    width: 50%;
+    height: 80%;
+    border-radius: 100%;
+    background-color: #000000;
+}
+
+img {
+    width: 50px;
+}
+
+.dark-mode {
+    float: right;
+    background-color: green;
+}
+
+
+</style>
+</head>
+<body>
+
+<button onclick="myFunction()" class="dark-mode-key" id="dark-mode-btn">
+    <section id="dark-mode"></section>
+</button>
+
+<script>
+function myFunction() {
+   var element = document.getElementById('dark-mode');
+   element.classList.toggle("dark-mode");
+}
+</script>
+
+</body>
+</html>
+

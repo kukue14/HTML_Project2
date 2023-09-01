@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food & Drink</title>
+    <link rel="stylesheet" href="./Styles/FoodAndDrink.css">
+    <link rel="icon" href="./images/drink.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="./JavaScript/FoodAndDrink.js"></script>
+    <script src="./JavaScript/unavaliable.js"></script>
+</head>
+
+<body>
+    <!-- <i class="fa-solid fa-cross icon"></i> -->
+    <div class="food_drink">
+        <a class="exit" href="./main.html" style="text-align: right; font-size: 40px; margin: 20px; color: #000000;"><i
+                class="fa-solid fa-circle-xmark"></i></a>
+        <div class="first_section">
+            <img src="./images/Chef-cuate.svg" alt="">
+        </div>
+        <div class="second_section">
+
+            <div class="heading">
+                <h2>
+                    <h1><i id="heading" style="color: orange;">Food</i> & Drink</h1>
+                    <p><i>UCSY Canteen</i></p>
+                </h2>
+            </div>
+            <section class="canteen">
+                <section>
+                    <h1>ခိုင်</h1>
+                    <a href="#">
+                        <h2 onclick="myFunction(), unavaliable()"><abbr title="Coming Soon!">Menu</abbr></h2>
+                    </a>
+                </section>
+                <section>
+                    <h1>တာချီလိတ်</h1>
+                    <a href="#">
+                        <h2 onclick="myFunction(), unavaliable()"><abbr title="Coming Soon!">Menu</abbr></h2>
+                    </a>
+                </section>
+                <section>
+                    <h1>ရှမ်းမလေး</h1>
+                    <a href="#">
+                        <h2 onclick="myFunction(), unavaliable()"><abbr title="Coming Soon!">Menu</abbr></h2>
+                    </a>
+                </section>
+            </section>
+            <p style="text-align: center; color: red; font-size: 30px;" id="demo"></p>
+        </div>
+    </div>
+</body>
+
+</html>

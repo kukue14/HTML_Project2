@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Carousel</title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  
+  <style>
+    /* Add any custom styles here */
+    .swiper-container {
+      width: 100%;
+      height: 300px;
+    }
+    .swiper-slide {
+      /* background-size: cover;
+      background-position: center; */
+      height: 400px;
+      width: 500px;
+      
+    }
+    
+  </style>
+</head>
+<body>
+  
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" style="background-image: url('/images/ucsylogo.png');"></div>
+      <div class="swiper-slide" style="background-image: url('/images/Active\ Support-amico.svg');"></div>
+      <div class="swiper-slide" style="background-image: url('image3.jpg');"></div>
+      <div class="swiper-slide" style="background-image: url('');"></div>
+    </div>
+    <!-- Add pagination and navigation if needed -->
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+    // Initialize Swiper
+    var swiper = new Swiper('.swiper-container', {
+      loop: true, // Enable loop mode
+      autoplay: {
+        delay: 3000, // Change image every 3 seconds
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+  
+</body>
+</html>

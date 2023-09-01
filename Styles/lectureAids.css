@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+*{
+    /* box-sizing: border-box; */
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    background: rgb(255, 255, 255);
+}
+
+button{
+    background: transparent;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+.sidebar{
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    width: 75px;
+    height: 100%;
+    background: #3AA6B9;
+    transition: all 0.4s;
+}
+
+body.open .sidebar{
+    width: 240px;
+}
+
+.sidebar-inner{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+}
+
+.sidebar-header{
+    display: flex;
+    align-items: center;
+    height: 68px;
+    padding: 0 1.25rem 0 0;
+    background: rgba(0, 0, 0, 0.1);
+    border-left: 3px solid transparent;
+    transition: all 0.4s;
+}
+
+.sidebar-header:hover{
+    border-left: 3px solid #bdbdbd;
+}
+
+.sidebar-burger{
+    width: 70px;
+    height: 70px;
+    display: grid;
+    place-items: center;
+}
+
+.sidebar-burger > i, body.open .sidebar-burger > i{
+    font-size: 25px;
+    color: #f9f9f9;
+    transition: all 0.4s;
+}
+
+.sidebar-burger:hover > i, body.open .sidebar-burger:hover > i{
+    color: #bdbdbd;
+}
+
+.sidebar-logo{
+    height: 30px;
+    opacity: 0;
+    transition: all 0.4s;
+}
+
+body.open .sidebar-logo{
+    opacity: 1;
+    transition: all 0.4s;
+}
+
+.sidebar-menu{
+    display: grid;
+}
+
+.sidebar-menu > button{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    height: 55px;
+    font-family: "Ubuntu";
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    line-height: 1;
+    padding: 0 22px;
+    border-left: 3px solid transparent;
+    transition: all 0.4s;
+}
+/* 
+.sidebar-menu > a > button:hover{
+    border-left: 3px solid #f9f9f9;
+    background: rgb(205, 205, 205);
+} */
+
+.sidebar-menu a:hover {
+    background: rgb(205, 205, 205);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+}
+
+.sidebar-menu > a > button > i{
+    font-size: 25px;
+    color: #f9f9f9;
+    transition: all 0.4s;
+    margin: 25px;
+}
+
+.sidebar-menu > button:hover > i, .sidebar-menu > button:hover > span{
+    /* color: #bdbdbd; */
+    color: #000000;
+}
+
+.sidebar-menu button:hover span {
+    color: #000000;
+}
+
+.sidebar-menu button:hover i {
+    color: #000000;
+}
+
+.sidebar-menu > a > button > span{
+    color: #f9f9f9;
+    opacity: 0;
+    transition: all 0.4s;
+}
+
+body.open .sidebar-menu > a > button > span{
+    opacity: 1;
+    transition: all 0.4s;
+    font-size: 20px;
+}
+
+.sidebar-menu a button span {
+    line-height: 55px;
+}
+
+.slide_hr {
+    width: 100%;
+}
+
+.sidebar_detail {
+    margin-left: 100px;
+    transition: 0.5s;
+}
+
+.sidebar_detail section {
+    margin-bottom: 50px;
+}
+
+.sidebar_detail section h1 {
+    font-size: 35px;
+}
+
+
+.sidebar_detail section .sub_div h1 {
+    font-size: 25px;
+}
+
+.open .sidebar_detail {
+    margin-left: 260px;
+    transition: 0.3s;
+}
+
+.sidebar_detail .main_div .sub_div {
+    border: 1px solid #000000;
+    background-color: #bdbdbd29;
+    border-radius: 10px;
+    padding: 0px 20px;
+    width: 300px;
+    margin-right: 20px;
+    transition: 0.5s;
+}
+
+.open .sidebar_detail .main_div .sub_div {
+    width: 250px;
+    transition: 0.5s;
+}
+
+.sidebar_detail .main_sub_div {
+    margin-bottom: 30px;
+    display: flex;
+}
+
+.sidebar_detail  .main_div .sub_div button {
+    /* border: 1px solid #000000; */
+    padding: 10px;
+    height: 35px;
+    border-radius: 40px;
+    background-color: #3AA6B9;
+}
+
+@media screen and (max-width:450px) {
+    .sidebar{
+        width: 50px;
+        height: 100%;
+        position: fixed;
+    }
+
+    body.open .sidebar{
+        width: 180px;
+        position: fixed;
+    }
+    
+    .sidebar_container .fix_div {
+        position: fixed;
+    }
+
+    .sidebar_container .fix_div .sidebar .sidebar-inner .sidebar-menu {
+        position: fixed;
+    }
+
+    .sidebar-inner{
+        width: 300px;
+    }
+    
+    .sidebar-header{
+        height: 50px;
+    }
+    
+    .sidebar-burger{
+        width: 50px;
+        height: 50px;
+
+    }
+    
+    .sidebar-burger > i, body.open .sidebar-burger > i{
+        font-size: 20px;
+    }
+    
+    .sidebar-logo{
+        height: 20px;
+
+    }
+
+    .sidebar-menu > a > button > i{
+        font-size: 18px;
+        margin: 18px;
+
+    }
+    
+    body.open .sidebar-menu > a > button > span{
+        opacity: 1;
+        transition: all 0.4s;
+        font-size: 15px;
+    }
+    
+    .sidebar-menu a button span {
+        line-height: 55px;
+    }
+    
+    .slide_hr {
+        width: 100%;
+    }
+    
+    .sidebar_detail {
+        margin-left: 80px;
+    }
+    
+    .sidebar_detail section {
+        margin-bottom: 30px;
+    }
+    
+    .sidebar_detail section h1 {
+        font-size: 20px;
+    }
+    
+    
+    .sidebar_detail section .sub_div h1 {
+        font-size: 15px;
+    }
+    
+    .open .sidebar_detail {
+        margin-left: 200px;
+    }
+
+    .sidebar_detail .main_sub_div {
+        margin-bottom: 30px;
+        display: block;
+    }
+    
+    .sidebar_detail .main_div .sub_div {
+        width: 250px;
+        margin-bottom: 20px;
+    }
+    
+    .open .sidebar_detail .main_div .sub_div {
+        width: 250px;
+    }
+    
+}

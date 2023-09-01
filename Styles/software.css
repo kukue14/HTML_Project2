@@ -1,0 +1,173 @@
+.software_mainSection {
+    /* border: 1px solid #000000; */
+    width: 95%;
+    border-radius: 20px;
+    box-shadow: 5px 5px 20px grey, -5px 0px 20px grey;
+    background-color: rgba(128, 128, 128, 0.178);
+    display: block;
+    margin: 100px auto;
+    padding-bottom: 50px;
+}
+
+.software_main {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.software_main h1 {
+    display: block;
+}
+
+.software_title {
+    padding: 10px;
+    text-align: center;
+    background-color: #3AA6B9;
+    width: 99%;
+    display: block;
+    margin: 0px auto;
+    margin-bottom: 50px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.software_title h1 {
+    font-size: 80px;
+    display: inline-block;
+}
+.software_title h2 {
+    display: inline-block;
+    font-size: 18px;
+}
+
+.main_section {
+    display: inline-block;
+    width: 700px;
+}
+
+.main_section .title {
+    padding-left: 30px;
+    padding-top: 10px;
+    background-color: transparent;
+    width: 80%;
+    border-radius: 10px;
+}
+
+.software img {
+    width: 50px;
+    display: inline-block;
+}
+
+.software {
+    padding-top: 15px;
+    height: 400px;
+    width: 650px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px gray, -3px 0px 8px gray;
+    display: block;
+    overflow: auto;
+    margin: 20px auto;
+}
+
+.software section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15px 30px;
+}
+
+.software section span {
+    display: flex;
+    align-items: center;
+}
+
+.software section .detail {
+    float: right;
+    display: block;
+    margin-left: 20px;
+}
+
+.software section .detail p {
+    font-size: 10px;
+}
+
+.software section .download_key {
+    padding: 3px 30px;
+    border-radius: 20px;
+    background-color: #3AA6B9;
+    color: rgb(0, 0, 0);
+    transition: 0.2s;
+
+}
+
+.software a {
+    text-decoration: none;
+}
+
+.software hr {
+    width: 500px;
+    margin-left: 100px;
+}
+
+.software h1:hover {
+    background-color: #53c1d5f4;
+    color: #000000;
+    transition: 0.5s;
+}
+
+@media screen and (max-width: 450px) {
+
+    .software_mainSection {
+        width: 350px;
+    }
+    .software {
+        width: 300px;
+        height: 200px;
+    }
+
+    .software_title {
+        width: 94.5%;
+        background-color: transparent;
+    }
+
+    .software_title h1{
+        font-size: 50px;
+    }
+
+    .software_main {
+        display: block;
+    }
+
+    .software_main .main_section {
+        width: 100%;
+    }
+
+    .software_main .main_section hr {
+        width: 300px;
+    }
+
+    .software section {
+       margin: 10px;
+    }
+
+    .software section span img {
+        width: 30px;
+    }
+
+    .software section span span {
+        font-size: 12px;
+    }
+
+    .software section span a {
+        font-size: 10px;
+    }
+
+    .software .download_key {
+        padding: 2px 20px;
+    }
+
+    .software_mainSection {
+        border: none;
+        box-shadow: none;
+        background-color: transparent;
+    }
+}
